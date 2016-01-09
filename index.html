@@ -2,7 +2,7 @@
 <meta charset="utf-8"/>
 <html>
 <head>
-        <link rel='stylesheet' type='text/css' href='style.css'/>
+    <link rel='stylesheet' type='text/css' href='style.css'/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="script.js"></script>
 </head>
@@ -11,20 +11,14 @@
 		<div id="title"> Taylor's Mugs 
 			<img src="mugcolor.jpg" style="width: 55px; height: 50px;">
 		</div>
-		<div class="tab highlight"> About me </div>
-		<div class="tab"> Instagram </div>
-		<div class="tab"> Orders </div>
-		<div class="tab"> About </div>
+		<div class="tab highlight about"> About me </div>
+		<div class="tab instagram"> Instagram </div>
+		<div class="tab orders"> Orders </div>
+		<div class="tab about"> About </div>
 	</div>
 	<div class="seperator"></div> <br>
 	<div class="block">
-		<img src="taylor.jpg" style="width: 280px; height: 280px; border-radius: 50px; padding-top: 10px;
-									 padding-left: 10px; padding-right: 5px;">
-		<div style="display: inline-block; width: 500px; vertical-align: top">
-			<p>"Free-range and organic. Vegan. Born and raised in Reno, Nevahdah.
-				Oakland Raider fan since '94. Family woman. Feminist (hate on it). Vaper (hate on it). Passionate for all colours of otter pops. Also, mugs.
-				Especially mugs. Hence the website."</p>
-		</div>
+		<script> $('.block').load('about.html'); </script>
 	</div>
 </body>
 </html>

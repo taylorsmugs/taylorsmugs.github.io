@@ -1,0 +1,11 @@
+<script type="text/javascript" src="instafeed.min.js"></script>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'taylorsmugs',
+        userId: 'USER_ID',
+        filter: function(image) {
+            return image.tags.indexOf('TAG_NAME') >= 0;
+        }
+    });
+    feed.run();
+</script>

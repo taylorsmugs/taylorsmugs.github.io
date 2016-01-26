@@ -24,16 +24,21 @@ $(document).ready(function() {
     $('.about').addClass('highlight')
   });
 
-  $('.pic').mouseenter(function() {
-    $('.pic').removeClass('emphasize');
-    $('.pic').addClass('emphasize')
+  $('#instafeed').on('mouseenter', '.pic', function() {
+    $('.pic').fadeTo(0, .7);
+    $(this).fadeTo(0, 1);
   });
 
-  $('.moar').click(function() {
+  $('#instafeed').on('mouseleave', '.pic', function() {
+    $('.pic').fadeTo(0, 1);
+  });
 
-    feed.next();
-    if(!feed.hasNext()){
-      $('.moar').hide();
+  $('.block').on('click', '.moar', function() {
+    $(this).fadeOut('medium');
+    $(this).hide();
+    if(feed.hasNext()){
+      feed.next();
+      $('#instafeed').after('<div class="moar">More</div>');
     }
     });
 });

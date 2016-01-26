@@ -63,9 +63,21 @@ body {
 	width: 50px;
 	height: 50px;
 	border-radius: 100px;
+	display: inline-block;
 	float: right;
 	text-align: center;
-	vertical-align: center;
+	vertical-align: text-bottom;
+}
+
+.pic{
+
+}
+
+.emphasize{
+	background: blue;
+	color: #153450;
+	border-radius: 5px;
+	height: 300px;
 }
 
 #tan: #F8E4CC

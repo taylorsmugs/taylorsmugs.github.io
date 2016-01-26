@@ -24,7 +24,16 @@ $(document).ready(function() {
     $('.about').addClass('highlight')
   });
 
+  $('.pic').mouseenter(function() {
+    $('.pic').removeClass('emphasize');
+    $('.pic').addClass('emphasize')
+  });
+
   $('.moar').click(function() {
 
-  });
+    feed.next();
+    if(!feed.hasNext()){
+      $('.moar').hide();
+    }
+    });
 });

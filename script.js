@@ -36,6 +36,10 @@ $(document).ready(function() {
     $('.pic').fadeTo(100, 1);
   });
 
+  $('.menu').on('mouseleave', this, function() {
+    $('.pic').fadeTo(100, 1);
+  });
+
   $('.block').on('click', '.moar', function() {
     $(this).fadeOut(250);
     feed.next();

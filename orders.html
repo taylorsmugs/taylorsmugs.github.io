@@ -12,6 +12,19 @@
      and she will contact you back via text or email
      about pricing and a completion date.
   </div><br>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        sortBy: 'random',
+        limit: '1',
+        resolution: 'standard_resolution',
+        userId: '2174415839',
+        clientId: '5ecff2e1873b4d519763b8f3adf4bc70',
+        template: '<a href="{{link}}"><img class="pic" src="{{image}}"style="width: 280px; height: 280px; border-radius: 50px; padding-top: 10px; padding-left: 10px; display: inline-block;"/></a>'
+    });
+    feed.run();
+</script>
+<div id="instafeed" style="float: right;"></div>
   <div style="font-size: 20px; padding-left: 5px;">
   <form action="https://formspree.io/taylorsmugsorders@gmail.com" method="POST">
     Name: <input type="text" name="Name" ><br>

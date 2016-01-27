@@ -1,3 +1,5 @@
+var current = null;
+
 $(document).ready(function() {
   $('.tab').click(function() {
     $('.tab').removeClass('highlight');
@@ -25,20 +27,23 @@ $(document).ready(function() {
   });
 
   $('#instafeed').on('mouseenter', '.pic', function() {
-    $('.pic').fadeTo(0, .7);
+    $('.pic').not(this).fadeTo(100, .7);
     $(this).fadeTo(0, 1);
+    current = this;
   });
 
-  $('#instafeed').on('mouseleave', '.pic', function() {
-    $('.pic').fadeTo(0, 1);
+  $('.seperator').on('mouseleave', this, function() {
+    $('.pic').fadeTo(100, 1);
   });
 
   $('.block').on('click', '.moar', function() {
-    $(this).fadeOut('medium');
-    $(this).hide();
-    if(feed.hasNext()){
-      feed.next();
-      $('#instafeed').after('<div class="moar">More</div>');
+    $(this).fadeOut(250);
+    feed.next();
+    $('#instafeed').after(this);
+    if(!feed.hasNext()){
+      $(this).hide();
     }
+    $(this).fadeIn('fast');
+    $('.pic').not(current).fadeTo(0, .7);
     });
 });

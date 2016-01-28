@@ -24,18 +24,23 @@ $(document).ready(function(){
     $('.about').addClass('highlight')
   });
 
-  $('.moar').hover(function(){
-    $(this).toggleClass('emphasize');
+  $('.moar').mouseenter(function(){
+    $('.pic').fadeTo(100, .7);
+  });
+
+  $('.moar').mouseout(function(){
+    $('.pic').fadeTo(100, 1);
   })
 
-  $('.option').hover(function(){
-    $(this).toggleClass('emphasize');
+  $('.option').click(function(){
+    $('.option').removeClass('emphasize');
+    $(this).addClass('emphasize');
   })
 
   $('#instafeed').on('mouseenter', '.pic', function(){
-    $('.pic').not(this).fadeTo(100, .7);
-    $(this).fadeTo(0, 1);
-    current = this;
+//    $('.pic').not(this).fadeTo(100, .7);
+ //   $(this).fadeTo(0, 1);
+ //   current = this;
   });
 
   $('.seperator').on('mouseleave', this, function(){

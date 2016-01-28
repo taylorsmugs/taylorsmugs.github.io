@@ -1,7 +1,11 @@
 <script type="text/javascript" src="instafeed.min.js"></script>
 <script src="script.js"></script>
-<div id="instafeed">
-  <style>.ig-b- { float: left; }
+<div class="block" style="text-align: center">
+<h1>Taylor's Instagram</h1>
+<div class="option most-recent emphasize">Most Recent</div>
+<div class="option most-liked" style="text-align: middle;">Most Liked</div>
+
+<style>.ig-b- { float: right; }
   .ig-b- img { visibility: visible; }
   .ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
   .ig-b-v-24 { width: 137px; height: 24px; background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0; }
@@ -9,10 +13,12 @@
   .ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }</style>
   <a href="https://www.instagram.com/taylorsmugs/?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a>
 </div>
+</div>
+
 <script type="text/javascript">
   var feed = new Instafeed({
     get: 'user',
-    limit: '8',
+    limit: 10,
     resolution: 'standard_resolution',
     userId: '2174415839',
     clientId: '5ecff2e1873b4d519763b8f3adf4bc70',
@@ -20,4 +26,7 @@
   });
   feed.run();
 </script>
+<div class="container">
+  <div id="instafeed"></div>
+</div>
 <div class="moar">More</div>

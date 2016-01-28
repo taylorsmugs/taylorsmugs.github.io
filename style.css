@@ -71,15 +71,26 @@ body {
 	cursor: pointer;
 	cursor: hand;
 }
- 
-.pic{
-
-}
 
 .emphasize{
+	border: solid;
+	border-width: 2px;
+	border-color: #153450;
+	border-radius: 30px;
+}
 
+.option{
+	width: 120px;
+	font-size: 25px;
+	padding: 10px;
+	cursor: pointer;
+	cursor: hand;
+	position: center;
+	text-align: middle;
+	display: inline-block;
 }
 
 #tan: #F8E4CC
 #blue: #8FBCDB
 #navy: #153450
+wWW

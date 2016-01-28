@@ -64,19 +64,20 @@ body {
 	width: 100px;
 	height: 100px;
 	border-radius: 100px;
-	float: right;
 	text-align: center;
 	vertical-align: bottom;
+	margin: auto;
+	padding: 10px;
 	cursor: pointer;
 	cursor: hand;
 }
-
+ 
 .pic{
 
 }
 
 .emphasize{
-	border-radius: 5px;
+
 }
 
 #tan: #F8E4CC

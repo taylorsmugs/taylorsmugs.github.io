@@ -26,6 +26,10 @@ $(document).ready(function() {
     $('.about').addClass('highlight')
   });
 
+  $('.moar').hover(function(){
+    $(this).toggleClass('emphasize');
+  })
+
   $('#instafeed').on('mouseenter', '.pic', function() {
     $('.pic').not(this).fadeTo(100, .7);
     $(this).fadeTo(0, 1);
@@ -41,13 +45,12 @@ $(document).ready(function() {
   });
 
   $('.block').on('click', '.moar', function() {
-    $(this).fadeOut(250);
     feed.next();
+    $(this).fadeOut(250);
     $('#instafeed').after(this);
     if(!feed.hasNext()){
-      $(this).hide();
+      $(this).fadeOut(250);
     }
-    $(this).fadeIn('fast');
-    $('.pic').not(current).fadeTo(0, .7);
+    $(this).fadeIn(10);
     });
 });

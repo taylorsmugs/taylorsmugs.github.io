@@ -59,14 +59,16 @@ body {
 
 .moar{
 	background: #153450;
+	font-size: 45px;
 	color: #8FBCDB;
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	border-radius: 100px;
-	display: inline-block;
 	float: right;
 	text-align: center;
 	vertical-align: bottom;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .pic{
@@ -74,10 +76,7 @@ body {
 }
 
 .emphasize{
-	background: blue;
-	color: #153450;
 	border-radius: 5px;
-	height: 300px;
 }
 
 #tan: #F8E4CC
